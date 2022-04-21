@@ -22,8 +22,7 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(int empId, String empName, String address, int postalCode, String gender, String dob, String email, int mobile, float salary, String department) {
-        this.empId = empId;
+    public Employee(String empName, String address, int postalCode, String gender, String dob, String email, int mobile, float salary, String department) {
         this.empName = empName;
         this.address = address;
         this.postalCode = postalCode;
@@ -115,19 +114,4 @@ public class Employee {
         this.department = department;
     }
 
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "empId=" + empId +
-                ", empName='" + empName + '\'' +
-                ", address='" + address + '\'' +
-                ", postalCode=" + postalCode +
-                ", gender='" + gender + '\'' +
-                ", dob='" + dob + '\'' +
-                ", email='" + email + '\'' +
-                ", mobile=" + mobile +
-                ", salary=" + salary +
-                ", department='" + department + '\'' +
-                '}';
-    }
 }

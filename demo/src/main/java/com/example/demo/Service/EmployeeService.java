@@ -11,7 +11,8 @@ import java.util.List;
 @Service
 public class EmployeeService {
     @Autowired
-    EmployeeRepository repository;
+    private EmployeeRepository repository;
+
     public List<Employee> getAllEmp() {
         List<Employee> employeeList = new ArrayList<>();
         repository.findAll().forEach(x-> employeeList.add(x));

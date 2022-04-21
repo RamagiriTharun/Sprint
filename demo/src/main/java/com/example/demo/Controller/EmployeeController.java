@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 public class EmployeeController {
     @Autowired
-    EmployeeService employeeService;
+    private EmployeeService employeeService;
 
     @GetMapping("/getallemp")
     List<Employee> getAllEmp(){

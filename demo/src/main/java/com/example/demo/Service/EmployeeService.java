@@ -1,5 +1,7 @@
 package com.example.demo.Service;
 
+import com.example.demo.Bean.Address;
+import com.example.demo.Bean.Department;
 import com.example.demo.Bean.Employee;
 import com.example.demo.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,16 +30,12 @@ public class EmployeeService {
         return emp;
     }
 
-    public Employee updateEmp(Employee employee) {
-        Employee emp = repository.save(employee);
-        return emp;
+    public void updateEmp(Employee employee) {
+            Employee emp = repository.save(employee);
     }
 
     public void deleteEmpId(int empId) {
         repository.deleteById(empId);
     }
 
-    public void deleteAllEmp() {
-        repository.deleteAll();
-    }
 }

@@ -1,13 +1,12 @@
 package com.example.demo.Controller;
 
 
+import com.example.demo.Bean.Department;
 import com.example.demo.Bean.Employee;
 import com.example.demo.Service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.mongo.embedded.EmbeddedMongoAutoConfiguration;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -32,19 +31,14 @@ public class EmployeeController {
     }
 
     @PutMapping("/updateemp")
-    Employee updateEmp(@RequestBody Employee employee){
-        return employeeService.updateEmp(employee);
+    public String updateEmp(@RequestBody Employee e){
+        employeeService.updateEmp(e);
+        return "Employee updated successfully";
     }
 
     @DeleteMapping("/deletebyid/{empId}")
     String deleteEmp(@PathVariable("empId") int empId){
         employeeService.deleteEmpId(empId);
         return "Employee deleted Successfully";
-    }
-
-    @DeleteMapping("/deleteallemp")
-    String deleteAllEmp(){
-        employeeService.deleteAllEmp();
-        return "all employee details deleted successfully";
     }
 }

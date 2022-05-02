@@ -1,8 +1,6 @@
 package com.example.demo.Bean;
 
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-
 import javax.persistence.*;
 import java.time.LocalDate;
 

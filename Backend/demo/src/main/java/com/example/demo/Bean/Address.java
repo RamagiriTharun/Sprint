@@ -26,7 +26,6 @@ public class Address {
 
     @OneToOne
     @JoinColumn(name = "emp_id", foreignKey = @ForeignKey(name = "FK_Address_EMP_ID"))
-
     private Employee employee;
 
 

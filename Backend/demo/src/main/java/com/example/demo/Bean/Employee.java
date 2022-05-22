@@ -24,7 +24,7 @@ public class Employee{
     private LocalDate dateOfBirth;
 
     @Column(name = "date_of_joining")
-    private LocalDate dateOfJoining;
+        private LocalDate dateOfJoining;
 
     @Column(name = "email", length = 50)
     private String email;

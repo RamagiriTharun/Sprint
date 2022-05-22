@@ -31,7 +31,7 @@ public class EmployeeController {
     }
 
     @PutMapping("/updateemp")
-    public String updateEmp(@RequestBody Employee e){
+    public String updateEmp( @RequestBody Employee e){
         employeeService.updateEmp(e);
         return "Employee updated successfully";
     }

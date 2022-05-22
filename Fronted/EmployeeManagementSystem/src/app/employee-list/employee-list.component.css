@@ -1,0 +1,20 @@
+.table{
+    padding-left: 100px;
+    padding-right: 200px;
+}
+.space {
+    width: 6px;
+    height: auto;
+    display: inline-block;
+}
+
+th{
+    text-align: center;
+}
+
+td{
+    text-align: center;
+}
+span{
+    padding-left: 100px;
+}

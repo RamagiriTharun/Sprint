@@ -1,0 +1,32 @@
+<h3>Employee Management System</h3>
+<h3>Basic Details</h3>
+<form #empform="ngForm" (ngSubmit)="onSubmit(empform.value)">
+    <label for="name">First Name</label>
+    <input type="text" required [(ngModel)]="employee.firstName" name="firstName"><br>
+
+    <label for="name">Last Name</label>
+    <input type="text"  required [(ngModel)]="employee.lastName" name="lastName"><br>
+
+    <label for="dob">Date Of Birth</label>
+    <input type="date"  required [(ngModel)]="employee.dateOfBirth" name="dateOfBirth"><br>
+
+    <label for="gender">Gender</label>
+    <input type="text"  required [(ngModel)]="employee.gender" name="gender" ><br>
+
+    <label for="email">Email</label>
+    <input type="email" required [(ngModel)]="employee.email" name="email"><br>
+
+    <label for="phoneno">Phone Number</label> 
+    <input type="number" required [(ngModel)]="employee.phoneNumber" name="phoneNumber"><br>
+
+    <label for="doj">Date Of Joining</label>
+    <input type="date"  required [(ngModel)]="employee.dateOfJoining" name="dateOfJoining"><br>
+
+    <label for="designation">Designation</label>
+    <input type="text"  required [(ngModel)]="employee.designation" name="designation"><br>
+
+    <label for="salary">Salary</label>
+    <input type="number" required [(ngModel)]="employee.salary" name="salary"><br>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+</form>

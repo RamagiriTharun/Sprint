@@ -1,0 +1,17 @@
+<br>
+<h2 style="padding-left: 100px;">Employee Management System</h2>
+<br><br>
+<br><br>
+<form #userForm="ngForm" >
+    <div class="login-form">
+        <div class="form">
+            <h3>Login</h3>
+            <input type="text" class="username" placeholder="Username" name="username"  [(ngModel)]="username" />
+            <input type="password" class="password"  placeholder="Password" name="password"  [(ngModel)]="password"/>
+            <button class="submit"  (click)="validate(userForm.value)" (click)="goTo()">Submit</button>
+        </div>
+    </div>
+</form>
+<br>
+<br>
+<router-outlet></router-outlet>

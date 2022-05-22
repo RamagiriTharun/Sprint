@@ -1,0 +1,39 @@
+<br>
+<h2 style="padding-left: 100px;">Employee Management System</h2><br>
+<h3>Basic Details</h3>
+<div *ngIf="employee">
+
+<label for="empId">Employee Id</label>
+<input type="number" readonly placeholder="{{employee.empId}}"><br>
+
+<label for="firstName">First Name</label>
+<input type = "text" readonly placeholder="{{employee.firstName}}"><br>
+
+<label for="lastName">Last Name</label>
+<input type="text" readonly placeholder="{{employee.lastName}}"><br>
+
+<label for="dob">Date Of Birth</label>
+<input type="date" readonly placeholder="{{employee.dateOfBirth}}"><br>
+
+<label for="gender">Gender</label>
+<input type="text" readonly placeholder="{{employee.gender}}"><br>
+
+<label for="email">Email</label>
+<input type="email" readonly placeholder="{{employee.email}}"><br>
+
+<label for="phoneno">Phone Number</label>
+<input type="number" readonly placeholder="{{employee.phoneNumber}}"><br>
+
+<label for="doj">Date Of Joining</label>
+<input type="date" readonly placeholder="{{employee.dateOfJoining}}"><br>
+
+<label for="designation">Designation</label>
+<input type="text" readonly placeholder="{{employee.designation}}"><br>
+
+<label for="salary">Salary</label>
+<input type="number" readonly placeholder="{{employee.salary}}"><br>
+
+</div>
+<br><br>
+
+<button type="button"  (click)="list()" class="btn btn-primary">Employee List</button> 

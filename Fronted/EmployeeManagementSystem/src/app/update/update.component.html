@@ -1,37 +1,106 @@
-<h3>Basic Details</h3>
+<br><br>
+<h1><span>E</span>mployee <span>M</span>anagement <span>S</span>ystem</h1><br>
+<hr style="height:5px;border-width:0;color:lightseagreen;background-color:lightseagreen">
+<br>
+<h3 style="padding-left: 100px;">Basic Details</h3>
+<br>
 
 <form (ngSubmit)="onSubmit()">
 
-<label for="empid">Employee Id</label>
-<input type="number" readonly [(ngModel)]="employee.empId" name="empId"><br>
+    <div class="col">
+        <div class="col">
+            <label for="empid">Employee Id</label>
+        </div>
+        <div class="col">
+            <input type="number" readonly [(ngModel)]="employee.empId" name="empId"><br>
+        </div>
+    </div><br>
 
-<label for="firstName">First Name</label>
-<input type = "text" required [(ngModel)]="employee.firstName" name="firstName"><br>
+    <div class="col">
+        <div class="col">
+            <label for="firstName">First Name</label>
+        </div>
+        <div class="col">
+            <input type="text" required [(ngModel)]="employee.firstName" name="firstName"><br>
+        </div>
+    </div><br>
 
-<label for="lastName">Last Name</label>
-<input type="text" required [(ngModel)]="employee.lastName" name="lastName"><br>
+    <div class="col">
+        <div class="col">
+            <label for="lastName">Last Name</label>
+        </div>
+        <div class="col">
+            <input type="text" required [(ngModel)]="employee.lastName" name="lastName"><br>
+        </div>
+    </div><br>
 
-<label for="dob">Date Of Birth</label>
-<input type="date" required [(ngModel)]="employee.dateOfBirth" name="dateOfBirth"><br>
+    <div class="col">
+        <div class="col">
+            <label for="dob">Date Of Birth</label>
+        </div>
+        <div class="col">
+            <input type="date" required [(ngModel)]="employee.dateOfBirth" name="dateOfBirth"><br>
+        </div>
+    </div><br>
 
-<label for="gender">Gender</label>
-<input type="text" readonly [(ngModel)]="employee.gender" name="gender"><br>
+    <div class="col">
+        <div class="col">
+            <label for="gender">Gender</label>
+        </div>
+        <div class="col">
+            <input type="text" readonly [(ngModel)]="employee.gender" name="gender"><br>
+        </div>
+    </div><br>
 
-<label for="email">Email</label>
-<input type="email" required [(ngModel)]="employee.email" name="email"><br>
+    <div class="col">
+        <div class="col">
+            <label for="email">Email</label>
+        </div>
+        <div class="col">
+            <input type="email" required [(ngModel)]="employee.email" name="email"><br>
+        </div>
+    </div><br>
 
-<label for="phoneno">Phone Number</label>
-<input type="number" required [(ngModel)]="employee.phoneNumber" name="phoneNumber"><br>
+    <div class="col">
+        <div class="col">
+            <label for="phoneno">Phone Number</label>
+        </div>
+        <div class="col">
+            <input type="number" required [(ngModel)]="employee.phoneNumber" name="phoneNumber"><br>
+        </div>
+    </div><br>
 
-<label for="doj">Date of Joining</label>
-<input type="date" readonly [(ngModel)]="employee.dateOfJoining" name="dateOfJoining"><br>
+    <div class="col">
+        <div class="col">
+            <label for="doj">Date of Joining</label>
+        </div>
+        <div class="col">
+            <input type="date" readonly [(ngModel)]="employee.dateOfJoining" name="dateOfJoining"><br>
+        </div>
+    </div><br>
 
-<label for="designation">Designation</label>
-<input type="text" required [(ngModel)]="employee.designation" name="designation"><br>
+    <div class="col">
+        <div class="col">
+            <label for="designation">Designation</label>
+        </div>
+        <div class="col">
+            <input type="text" required [(ngModel)]="employee.designation" name="designation"><br>
+        </div>
+    </div><br>
 
-<label for="salary">Salary</label>
-<input type="number" required [(ngModel)]="employee.salary" name="salary"><br>
+    <div class="col">
+        <div class="col">
+            <label for="salary">Salary</label>
+        </div>
+        <div class="col">
+            <input type="number" required [(ngModel)]="employee.salary" name="salary"><br>
+        </div>
+    </div><br>
 
-<button type="submit" class="btn btn-success">Submit</button>
+    <div class="adjust">
+        <button type="submit" class="btn btn-success">Submit</button>
+    </div>
 
 </form>
+
+<br><br><br><br>

@@ -1,14 +1,19 @@
-<br>
-<h2 style="padding-left: 100px;">Employee Management System</h2><br>
-<span><button type="button" (click)="logout()" class="btn btn-primary">Logout</button></span>
-<br>
-<h1 style="padding-left: 100px;">Employee List</h1><br>
-<span><button type="button" (click)="add()" class="btn btn-primary">Add Employee</button></span>
+<br><br>
+<h1><span>E</span>mployee <span>M</span>anagement <span>S</span>ystem</h1>
+<div class="adjust">
+  <button type="button" (click)="logout()" class="btn btn-primary">Logout</button>
+</div><br>
+<hr style="height:5px;border-width:0;color:lightseagreen;background-color:lightseagreen">
 
+<br>
+<h3 style="padding-left: 100px;">Employee List</h3><br>
+<div class="adjust2">
+  <button type="button" (click)="add()" class="btn btn-primary">Add Employee</button>
+</div>
 
 <br><br>
 <div class="table">
-<table class="table table-striped">
+  <table class="table table-striped">
     <thead>
       <tr>
         <th scope="col">Employee Id</th>
@@ -19,20 +24,20 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor = "let emp of employee">
-          <td>{{emp.empId}}</td>
-          <td>{{emp.firstName}}</td>
-          <td>{{emp.lastName}}</td>
-          <td>{{emp.email}}</td>
-          <td>
+      <tr *ngFor="let emp of employee">
+        <td>{{emp.empId}}</td>
+        <td>{{emp.firstName}}</td>
+        <td>{{emp.lastName}}</td>
+        <td>{{emp.email}}</td>
+        <td>
           <div>
             <button type="button" class="btn btn-primary" (click)="update(emp.empId)">Update</button>
             <div class="space"></div>
             <button type="button" class="btn btn-primary" (click)="details(emp.empId)">Details</button>
-            <div class="space"></div>  
-            <button type="button" class="btn btn-danger" (click)="delete(emp.empId)">Delete</button>  
-        </div>
-    </td>
+            <div class="space"></div>
+            <button type="button" class="btn btn-danger" (click)="delete(emp.empId)">Delete</button>
+          </div>
+        </td>
       </tr>
     </tbody>
   </table>

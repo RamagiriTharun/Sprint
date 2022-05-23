@@ -1,39 +1,102 @@
+<br><br>
+<h1><span>E</span>mployee <span>M</span>anagement <span>S</span>ystem</h1>
+<div class="adjust">
+    <button type="button" (click)="list()" class="btn btn-primary">Employee List</button>
+</div>
+<hr style="height:5px;border-width:0;color:lightseagreen;background-color:lightseagreen">
 <br>
-<h2 style="padding-left: 100px;">Employee Management System</h2><br>
-<h3>Basic Details</h3>
+<h3 style="padding-left: 100px;">Basic Details</h3>
+<br>
 <div *ngIf="employee">
 
-<label for="empId">Employee Id</label>
-<input type="number" readonly placeholder="{{employee.empId}}"><br>
+    <div class="col">
+        <div class="col">
+            <label for="empId">Employee Id</label>
+        </div>
+        <div class="col">
+            <input type="number" readonly placeholder="{{employee.empId}}">
+        </div>
+    </div>
 
-<label for="firstName">First Name</label>
-<input type = "text" readonly placeholder="{{employee.firstName}}"><br>
+    <div class="col">
+        <div class="col">
+            <label for="firstName">First Name</label>
+        </div>
+        <div class="col">
+            <input type="text" readonly placeholder="{{employee.firstName}}">
+        </div>
+    </div>
 
-<label for="lastName">Last Name</label>
-<input type="text" readonly placeholder="{{employee.lastName}}"><br>
+    <div class="col">
+        <div class="col">
+            <label for="lastName">Last Name</label>
+        </div>
+        <div class="col">
+            <input type="text" readonly placeholder="{{employee.lastName}}">
+        </div>
+    </div>
 
-<label for="dob">Date Of Birth</label>
-<input type="date" readonly placeholder="{{employee.dateOfBirth}}"><br>
+    <div class="col">
+        <div class="col">
+            <label for="dob">Date Of Birth</label>
+        </div>
+        <div class="col">
+            <input type="text" readonly placeholder="{{employee.dateOfBirth}}"><br>
+        </div>
+    </div>
 
-<label for="gender">Gender</label>
-<input type="text" readonly placeholder="{{employee.gender}}"><br>
+    <div class="col">
+        <div class="col">
+            <label for="gender">Gender</label>
+        </div>
+        <div class="col">
+            <input type="text" readonly placeholder="{{employee.gender}}"><br>
+        </div>
+    </div>
 
-<label for="email">Email</label>
-<input type="email" readonly placeholder="{{employee.email}}"><br>
+    <div class="col">
+        <div class="col">
+            <label for="email">Email</label>
+        </div>
+        <div class="col">
+            <input type="email" readonly placeholder="{{employee.email}}"><br>
+        </div>
+    </div>
 
-<label for="phoneno">Phone Number</label>
-<input type="number" readonly placeholder="{{employee.phoneNumber}}"><br>
+    <div class="col">
+        <div class="col">
+            <label for="phoneno">Phone Number</label>
+        </div>
+        <div class="col">
+            <input type="number" readonly placeholder="{{employee.phoneNumber}}"><br>
+        </div>
+    </div>
 
-<label for="doj">Date Of Joining</label>
-<input type="date" readonly placeholder="{{employee.dateOfJoining}}"><br>
+    <div class="col">
+        <div class="col">
+            <label for="doj">Date Of Joining</label>
+        </div>
+        <div class="col">
+            <input type="text" readonly placeholder="{{employee.dateOfJoining}}"><br>
+        </div>
+    </div>
 
-<label for="designation">Designation</label>
-<input type="text" readonly placeholder="{{employee.designation}}"><br>
+    <div class="col">
+        <div class="col">
+            <label for="designation">Designation</label>
+        </div>
+        <div class="col">
+            <input type="text" readonly placeholder="{{employee.designation}}"><br>
+        </div>
+    </div>
 
-<label for="salary">Salary</label>
-<input type="number" readonly placeholder="{{employee.salary}}"><br>
-
+    <div class="col">
+        <div class="col">
+            <label for="salary">Salary</label>
+        </div>
+        <div class="col">
+            <input type="number" readonly placeholder="{{employee.salary}}"><br>
+        </div>
+    </div>
 </div>
 <br><br>
-
-<button type="button"  (click)="list()" class="btn btn-primary">Employee List</button> 

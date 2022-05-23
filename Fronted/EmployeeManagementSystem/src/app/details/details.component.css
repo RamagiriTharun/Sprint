@@ -1,0 +1,26 @@
+h1{
+    padding-left: 100px;
+    display: inline;
+}
+span{
+    color: lightseagreen;
+}
+.adjust{
+    float: right;
+    padding-right: 200px;
+}
+label{
+    padding-left: 100px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input{
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    display: inline;
+    left: 100px;
+    font-size: large;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
